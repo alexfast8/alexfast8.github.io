@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<head>
+	<style>
+		body {
+			padding:0;
+			margin:0;
+			height: 100%;
+		}
+		html{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+		}
+		#map {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 0px; 
+			left: 5px;
+		}
+		#map2 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 255px; 
+			left: 5px;
+		}
+		#map3 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 510px; 
+			left: 5px;
+			}
+		#map4 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 765px; 
+			left: 5px;
+		}
+		#map5 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 1020px; 
+			left: 5px;
+		}
+		#map6 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 0px; 
+			left: 275px;
+		}
+		#map7 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 255px; 
+			left: 275px;
+		}
+		#map8 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 510px; 
+			left: 275px;
+		}
+		#map9 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 765px; 
+			left: 275px;
+		}
+		#map10 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 1020px; 
+			left: 275px;
+		}
+		#map11 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 0px; 
+			left: 545px;
+		}
+		#map12 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 255px; 
+			left: 545px;
+		}
+		#map13 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 510px; 
+			left: 545px;
+		}
+		#map14 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 765px; 
+			left: 545px;
+		}
+		#map15 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 1020px; 
+			left: 545px;
+		}
+		#map16 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 0px; 
+			left: 815px;
+		}
+		#map17 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 255px; 
+			left: 815px;
+		}
+		#map18 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 510px; 
+			left: 815px;
+		}
+		#map19 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 765px; 
+			left: 815px;
+		}
+		#map20 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 1020px; 
+			left: 815px;
+		}
+		#map21 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 0px; 
+			left: 1085px;
+		}
+		#map22 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 255px; 
+			left: 1085px;
+		}
+		#map23 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 510px; 
+			left: 1085px;
+		}
+		#map24 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 765px; 
+			left: 1085px;
+		}
+		#map25 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 1020px; 
+			left: 1085px;
+		}
+		#map26 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 0px; 
+			left: 1355px;
+		}
+		#map27 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 255px; 
+			left: 1355px;
+		}
+		#map28 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 510px; 
+			left: 1355px;
+		}
+		#map29 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 765px; 
+			left: 1355px;
+		}
+		#map30 {
+			height: 250px;
+			width: 250px;
+			position: absolute;
+			top: 1020px; 
+			left: 1355px;
+		}
+	</style>
+
+
+	<title> First Web Map </title>
+	<link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
+	<script src ="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+</head>
+
+
+
+<body>
+	<div id="map"></div>
+	<div id="map2"></div>
+	<div id="map3"></div>
+	<div id="map4"></div>
+	<div id="map5"></div>
+	<div id="map6"></div>
+	<div id="map7"></div>
+	<div id="map8"></div>
+	<div id="map9"></div>
+	<div id="map10"></div>
+	<div id="map11"></div>
+	<div id="map12"></div>
+	<div id="map13"></div>
+	<div id="map14"></div>
+	<div id="map15"></div>
+	<div id="map16"></div>
+	<div id="map17"></div>
+	<div id="map18"></div>
+	<div id="map19"></div>
+	<div id="map20"></div>
+	<div id="map21"></div>
+	<div id="map22"></div>
+	<div id="map23"></div>
+	<div id="map24"></div>
+	<div id="map25"></div>
+	<div id="map26"></div>
+	<div id="map27"></div>
+	<div id="map28"></div>
+	<div id="map29"></div>
+	<div id="map30"></div>
+
+
+	<script>
+
+//Camden Yards
+var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map = L.map('map', {
+	  scrollWheelZoom: false,
+	  center: [39.284052, -76.621512],
+	  zoom: 17
+	});
+
+	map.addLayer(layer);
+
+//Fenway Park 
+var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map2 = L.map('map2', {
+	  scrollWheelZoom: false,
+	  center: [42.346676, -71.097218],
+	  zoom: 17
+	});
+
+	map2.addLayer(layer);
+
+//Yankee Stadium 
+var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map3 = L.map('map3', {
+	  scrollWheelZoom: false,
+	  center: [40.829643, -73.926175],
+	  zoom: 17
+	});
+
+	map3.addLayer(layer);
+
+//Tropicana
+var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map4 = L.map('map4', {
+	  scrollWheelZoom: false,
+	  center: [27.768225, -82.653392],
+	  zoom: 17
+	});
+
+	map4.addLayer(layer);
+
+//Rogers Centre
+var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map5 = L.map('map5', {
+	  scrollWheelZoom: false,
+	  center: [43.641438, -79.389353],
+	  zoom: 16
+	});
+
+	map5.addLayer(layer);
+
+//U.S. Cellular 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map6 = L.map('map6', {
+	  scrollWheelZoom: false,
+	  center: [41.829941, -87.633760],
+	  zoom: 17
+	});
+
+	map6.addLayer(layer);
+
+//Progressive Field 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map7 = L.map('map7', {
+	  scrollWheelZoom: false,
+	  center: [41.496211, -81.685229],
+	  zoom: 17
+	});
+
+	map7.addLayer(layer);
+
+//Comerica Park
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map8 = L.map('map8', {
+	  scrollWheelZoom: false,
+	  center: [42.338998, -83.048520],
+	  zoom: 17
+	});
+
+	map8.addLayer(layer);
+
+//Kauffman Stadium
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map9 = L.map('map9', {
+	  scrollWheelZoom: false,
+	  center: [39.051672, -94.480314],
+	  zoom: 16
+	});
+
+	map9.addLayer(layer);
+
+//Target Field 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map10 = L.map('map10', {
+	  scrollWheelZoom: false,
+	  center: [44.981712, -93.277760],
+	  zoom: 17
+	});
+
+	map10.addLayer(layer);
+
+//Minute Maid 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map11 = L.map('map11', {
+	  scrollWheelZoom: false,
+	  center: [29.757268, -95.355519],
+	  zoom: 17
+	});
+
+	map11.addLayer(layer);
+
+//Angels Stadium 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map12 = L.map('map12', {
+	  scrollWheelZoom: false,
+	  center: [33.800308, -117.882732],
+	  zoom: 17
+	});
+
+	map12.addLayer(layer);
+
+//O.Co 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map13 = L.map('map13', {
+	  scrollWheelZoom: false,
+	  center: [37.751595, -122.200546],
+	  zoom: 17
+	});
+
+	map13.addLayer(layer);
+
+//Safeco
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map14 = L.map('map14', {
+	  scrollWheelZoom: false,
+	  center: [47.591391, -122.332328],
+	  zoom: 17
+	});
+
+	map14.addLayer(layer);
+
+//Globe Life 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map15 = L.map('map15', {
+	  scrollWheelZoom: false,
+	  center: [32.751280, -97.082504],
+	  zoom: 17
+	});
+
+	map15.addLayer(layer);
+
+//SunTrust Park
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map16 = L.map('map16', {
+	  scrollWheelZoom: false,
+	  center: [33.734808, -84.389973],
+	  zoom: 17
+	});
+
+	map16.addLayer(layer);
+
+//Marlins Park
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map17 = L.map('map17', {
+	  scrollWheelZoom: false,
+	  center: [25.778100, -80.219543],
+	  zoom: 17
+	});
+
+	map17.addLayer(layer);
+
+//CitiField 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map18 = L.map('map18', {
+	  scrollWheelZoom: false,
+	  center: [40.757088, -73.845821],
+	  zoom: 17
+	});
+
+	map18.addLayer(layer);
+
+//Citizens Bank
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map19 = L.map('map19', {
+	  scrollWheelZoom: false,
+	  center: [39.906057, -75.166495],
+	  zoom: 17
+	});
+
+	map19.addLayer(layer);
+
+//Nationals Park 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map20 = L.map('map20', {
+	  scrollWheelZoom: false,
+	  center: [38.873010, -77.007433],
+	  zoom: 17
+	});
+
+	map20.addLayer(layer);
+
+//Wrigley Field
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map21 = L.map('map21', {
+	  scrollWheelZoom: false,
+	  center: [41.948438, -87.655333],
+	  zoom: 17
+	});
+
+	map21.addLayer(layer);
+
+//Great American Ballpark 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map22 = L.map('map22', {
+	  scrollWheelZoom: false,
+	  center: [39.097931, -84.508151],
+	  zoom: 17
+	});
+
+	map22.addLayer(layer);
+
+//Miller Park 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map23 = L.map('map23', {
+	  scrollWheelZoom: false,
+	  center: [43.028204, -87.971258],
+	  zoom: 17
+	});
+
+	map23.addLayer(layer);
+
+//PNC Park 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map24 = L.map('map24', {
+	  scrollWheelZoom: false,
+	  center: [40.446855, -80.005666],
+	  zoom: 17
+	});
+
+	map24.addLayer(layer);
+
+//Busch Stadium 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map25 = L.map('map25', {
+	  scrollWheelZoom: false,
+	  center: [38.622619, -90.192821],
+	  zoom: 17
+	});
+
+	map25.addLayer(layer);
+
+//Chase Field 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map26 = L.map('map26', {
+	  scrollWheelZoom: false,
+	  center: [33.445480, -112.066783],
+	  zoom: 17
+	});
+
+	map26.addLayer(layer);
+
+//Coors Field 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map27 = L.map('map27', {
+	  scrollWheelZoom: false,
+	  center: [39.755882, -104.994178],
+	  zoom: 17
+	});
+
+	map27.addLayer(layer);
+
+//Dodger Stadium 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map28 = L.map('map28', {
+	  scrollWheelZoom: false,
+	  center: [34.073851, -118.239958],
+	  zoom: 17
+	});
+
+	map28.addLayer(layer);
+
+//Petco Park 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map29 = L.map('map29', {
+	  scrollWheelZoom: false,
+	  center: [32.707210, -117.157054],
+	  zoom: 17
+	});
+
+	map29.addLayer(layer);
+
+//AT&T Park 
+	var layer = new L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', "watercolor", {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+});
+
+	var map30 = L.map('map30', {
+	  scrollWheelZoom: false,
+	  center: [37.778595, -122.389270],
+	  zoom: 17
+	});
+
+	map30.addLayer(layer);
+	</script>
+
+
+</body>
+</html>
